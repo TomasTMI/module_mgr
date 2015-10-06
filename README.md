@@ -1,6 +1,7 @@
+# Module Manager
+
 [![Documentation Status](https://readthedocs.org/projects/module-mgr/badge/?version=latest)](http://module-mgr.readthedocs.org/en/latest/?badge=latest)
 
-# module_mgr
 Simple Python Module Manager
 
 Usage example:
