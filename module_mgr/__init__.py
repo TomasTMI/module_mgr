@@ -23,20 +23,20 @@ def register_path(path):
 
     # Make sure that path is a string
     if not isinstance(path, str):
-        print ("The path should be a string. Found: %s. Ignoring.."
-               % type(path))
+        #print ("The path should be a string. Found: %s. Ignoring.."
+        #       % type(path))
         return
 
     # Check the path specified is a valid folder
     if not os.path.isdir(path):
-        print ("The path: '%s' is not a valid folder. Ignoring.." %
-               path)
+        #print ("The path: '%s' is not a valid folder. Ignoring.." %
+        #       path)
         return
 
     # Check if the path has been already added to the list
     if path in __registered_paths:
-        print ("The path: '%s' already exists in the "
-               "__registered_paths list. Ignoring.." % path)
+        #print ("The path: '%s' already exists in the "
+        #       "__registered_paths list. Ignoring.." % path)
         return
 
     __registered_paths.append(path)
@@ -69,13 +69,13 @@ def deregister_path(path):
 
     # Make sure that path is a string
     if not isinstance(path, str):
-        print ("The path should be a string. Found: %s. Ignoring.."
-               % type(path))
+        #print ("The path should be a string. Found: %s. Ignoring.."
+        #       % type(path))
         return
 
     # Check if the path is already in list
     if path not in __registered_paths:
-        print ("The path: '%s' is not in the list. Ignoring.." % path)
+        #print ("The path: '%s' is not in the list. Ignoring.." % path)
         return
 
     __registered_paths.remove(path)
@@ -148,7 +148,7 @@ def load_modules(modules_to_load):
     modules_loaded = list()
     
     if not modules_to_load:
-        print "No modules discovered. Nothing to do.."
+        # print "No modules discovered. Nothing to do.."
         return
 
     for module in modules_to_load:
