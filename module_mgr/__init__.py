@@ -111,7 +111,7 @@ def discover_modules():
                    os.path.isfile(os.path.join(path,f)) and
                    f.endswith('.py')]
 
-        print modules
+        # print modules
         modules = list(set(modules))
         return modules
 
